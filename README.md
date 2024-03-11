@@ -1,2 +1,6 @@
-# dotfiles
-my dotfiles
+# My Dotfiles
+
+## Dotfiles inside here 
+
+.zshrc
+I3 Config
