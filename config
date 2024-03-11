@@ -30,6 +30,9 @@ bindsym $mod+Shift+q exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # start dmenu (a program launcher)
 bindsym $mod+d exec --no-startup-id dmenu_run
 
+# Print section
+bindsym Print exec --no-startup-id maim --format=png --select | xclip -selection clipboard -t image/png
+
 # change windows
 bindsym $mod+h move left
 bindsym $mod+j move down
