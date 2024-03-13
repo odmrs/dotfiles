@@ -113,6 +113,9 @@ bindsym $mod+Control l resize shrink width 5 px or 5 ppt
 bindsym $mod+Control k resize grow height 5 px or 5 ppt
 bindsym $mod+Control j resize shrink height 5 px or 5 ppt 
 
+# Setkeybord to br layout
 exec "setxkbmap -layout br"
-
+# Invert capslock to esc
+exec setxkbmap -option caps:swapescape
+# Set my display right side
 exec xrandr --output "HDMI-A-0" --left-of "DisplayPort-0"
