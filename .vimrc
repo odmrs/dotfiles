@@ -3,17 +3,19 @@ call plug#begin('~/.vim/plugged/')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'}
 Plug 'LunarWatcher/auto-pairs'
-Plug 'jaredgorski/Mies.vim'
+Plug 'fxn/vim-monochrome'
+Plug 'rust-lang/rust.vim'
+Plug 'dense-analysis/ale'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " Default colorscheme"
-colorscheme mies
+let g:monochrome_italic_comments = 1
+colorscheme monochrome
 set relativenumber
-set bg=light
 
-"NerdTree built-in"
-inoremap <c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
-nnoremap <c-b> <Esc>:Lex<cr>:vertical resize 30<cr>
+"NerdTree"
+nnoremap <C-b> :NERDTreeToggle<CR>
 
 "Move around with hjkl"
 inoremap <C-h> <Left>
@@ -43,13 +45,8 @@ let g:go_fmt_command = "goimports"
 " automatically highlight variable your cursor is on
 let g:go_auto_sameids = 0
 
-" About Syntax
-let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
-let g:go_highlight_functions = 1
-let g:go_highlight_function_calls = 1
-let g:go_highlight_operators = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_build_constraints = 1
-let g:go_highlight_generate_tags = 1
-let g:go_bin_path = $HOME."/go/bin"
+" Rust
+let g:rust_clip_command = 'xclip -selection clipboard'
+let g:rustfmt_autosave = 1
+let g:rustfmt_emit_files = 1
+let g:rustfmt_fail_silently = 0
