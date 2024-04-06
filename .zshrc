@@ -2,12 +2,6 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="minimal"
 
-# uncomment the following line to disable colors in ls.
- DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to enable command auto-correction.
- ENABLE_CORRECTION="true"
-
 # Load git plugins
 plugins=(git)
 
