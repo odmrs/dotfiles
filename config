@@ -20,6 +20,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty
+bindsym $mod+g exec chromium
 
 # kill focused window
 bindsym $mod+q kill
