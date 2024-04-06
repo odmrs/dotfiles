@@ -21,7 +21,7 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec alacritty
 bindsym $mod+g exec chromium
-
+bindsym $mod+Shift+b exec qutebrowser
 # kill focused window
 bindsym $mod+q kill
 
@@ -41,7 +41,7 @@ bindsym $mod+k move up
 bindsym $mod+l move right
 
 # change focous window
-bindsym $mod++Shift+h focus left
+bindsym $mod+Shift+h focus left
 bindsym $mod+Shift+j focus down
 bindsym $mod+Shift+k focus up
 bindsym $mod+Shift+l focus right
