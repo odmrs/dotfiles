@@ -3,15 +3,14 @@ call plug#begin('~/.vim/plugged/')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries'}
 Plug 'LunarWatcher/auto-pairs'
-Plug 'fxn/vim-monochrome'
 Plug 'rust-lang/rust.vim'
+Plug 'danishprakash/vim-yami'
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 call plug#end()
 
 " Default colorscheme"
-let g:monochrome_italic_comments = 1
-colorscheme monochrome
+colorscheme yami
 set relativenumber
 
 "NerdTree"
