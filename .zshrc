@@ -1,9 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
-
+export LANG=en_US.UTF-8
 ZSH_THEME="minimal"
 
 # Load git plugins
-plugins=(git zsh-autosuggestions)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
