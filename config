@@ -109,10 +109,10 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Rezise windows
-bindsym $mod+Control h resize grow width 5 px or 5 ppt
-bindsym $mod+Control l resize shrink width 5 px or 5 ppt
-bindsym $mod+Control k resize grow height 5 px or 5 ppt
-bindsym $mod+Control j resize shrink height 5 px or 5 ppt 
+bindsym $mod+Control h resize grow width 15 px or 15 ppt
+bindsym $mod+Control l resize shrink width 15 px or 15 ppt
+bindsym $mod+Control k resize grow height 15 px or 15 ppt
+bindsym $mod+Control j resize shrink height 15 px or 15 ppt 
 
 # Setkeybord to br layout
 exec setxkbmap -layout br
@@ -120,3 +120,13 @@ exec setxkbmap -layout br
 exec setxkbmap -option caps:swapescape
 # Set my display right side
 exec xrandr --output "HDMI-A-0" --left-of "DisplayPort-0"
+
+# class                 border  backgr. text    indicator child_border
+client.focused          #8a2be2 #6a1b9a #ffffff #9c27b0   #6a1b9a
+client.focused_inactive #605c70 #504a60 #e0e0e0 #676767   #504a60
+client.unfocused        #504a5f #3a3648 #c0c0c0 #424242   #3a3648
+client.urgent           #2f343a #900000 #ffffff #900000   #900000
+client.placeholder      #202328 #2d3136 #ffffff #2d3136   #2d3136
+
+client.background       #ffffff
+
