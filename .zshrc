@@ -21,3 +21,6 @@ export LC_CTYPE=en_US.UTF-8
 export PATH=$PATH:/usr/lib/go
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+# --- Emacs ---
+export PATH="$HOME/.emacs.d/bin:$PATH"
