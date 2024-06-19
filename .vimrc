@@ -15,13 +15,16 @@ inoremap <c-n> <Esc>:Lex<cr>:vertical resize 30<cr>
 nnoremap <c-n> <Esc>:Lex<cr>:vertical resize 30<cr>
 
 call plug#begin('~/.vim/plugged/')
+Plug 'jaredgorski/Mies.vim'
 call plug#end()
 
 " Default colorscheme"
 set relativenumber
 
 "Turn off syntaxe highlight"
-syntax off
+syntax on
+set background=light
+colorscheme mies
 let g:loaded_matchparen=1
 
 "Search"
@@ -36,6 +39,7 @@ inoremap <C-l> <Right>
 
 "Set leader"
 let mapleader = " "
-
+nnoremap <Leader>w :w<CR>
+nnoremap <Leader>q :q<CR>
 "toggle terminal"
 noremap <Leader>v :botright vertical terminal<CR>
